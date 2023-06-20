@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Request;
 
 use App\Services\ApiService;
 
@@ -24,10 +25,10 @@ class ApiController extends BaseController
     /**
      * @return void
      */
-    public function save()
+    public function save(Request $request)
     {
         try {
-            $response = $this->apiservice->postData();
+            $response = $this->apiservice->postData($request);
             echo "<pre>";
             print_r($response);
             exit;
