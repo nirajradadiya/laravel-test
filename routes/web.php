@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/supadata/save', [ApiController::class, 'save' ]);
+Route::post('/supadata/save', [ApiController::class, 'save' ])->name('supadata.save');
