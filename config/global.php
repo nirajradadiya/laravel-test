@@ -15,8 +15,6 @@ return [
             "loan_purpose"=> "other",
             "loan_amount"=> 1250,
             "loan_term"=> 12,
-            "title"=> "Mr",
-            "first_name"=> "TestNiraj",
             "middle_name"=> "TestNiraj",
             "last_name"=> "TestNiraj",
             "date_of_birth"=> "30-11-1999",
